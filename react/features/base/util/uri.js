@@ -479,7 +479,8 @@ export function urlObjectToString(o: Object): ?string {
                     // XXX The value of domain in supposed to be host/hostname
                     // and, optionally, pathname. Make sure it is not taken for
                     // a pathname only.
-                    _fixURIStringScheme(`${APP_LINK_SCHEME}//${domain}`));
+                    // TODO: Tan customize for uBegin
+                    _fixURIStringScheme(`https://${domain}`));
 
             // authority
             if (host) {

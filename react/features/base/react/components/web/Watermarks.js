@@ -118,19 +118,22 @@ class Watermarks extends Component<Props, State> {
      * @returns {ReactElement}
      */
     render() {
-        return (
-            <div>
-                {
-                    this._renderJitsiWatermark()
-                }
-                {
-                    this._renderBrandWatermark()
-                }
-                {
-                    this._renderPoweredBy()
-                }
-            </div>
-        );
+
+        // TODO: Tan customize for uBegin
+        return null;
+        // return (
+        //     <div>
+        //         {
+        //             this._renderJitsiWatermark()
+        //         }
+        //         {
+        //             this._renderBrandWatermark()
+        //         }
+        //         {
+        //             this._renderPoweredBy()
+        //         }
+        //     </div>
+        // );
     }
 
     /**

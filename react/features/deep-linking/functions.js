@@ -61,9 +61,12 @@ export function getDeepLinkingPage(state) {
             = typeof interfaceConfig === 'object'
                 && interfaceConfig.MOBILE_APP_PROMO;
 
-        return Promise.resolve(
-            typeof mobileAppPromo === 'undefined' || Boolean(mobileAppPromo)
-                ? DeepLinkingMobilePage : NoMobileApp);
+        return Promise.resolve(NoMobileApp);
+
+        //
+        // return Promise.resolve(
+        //     typeof mobileAppPromo === 'undefined' || Boolean(mobileAppPromo)
+        //         ? DeepLinkingMobilePage : NoMobileApp);
     }
 
     // desktop

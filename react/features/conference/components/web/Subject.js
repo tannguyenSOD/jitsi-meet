@@ -48,13 +48,24 @@ class Subject extends Component<Props> {
     render() {
         const { _showParticipantCount, _subject, _visible } = this.props;
 
+        // TODO: Tan customize for uBegin
+
         return (
             <div className = { `subject ${_visible ? 'visible' : ''}` }>
-                <span className = 'subject-text'>{ _subject }</span>
+                <span className = 'subject-text'> uBegin </span>
                 { _showParticipantCount && <ParticipantsCount /> }
                 <ConferenceTimer />
             </div>
         );
+
+        // return (
+        //     <div className = { `subject ${_visible ? 'visible' : ''}` }>
+        //         {/*<span className = 'subject-text'>{ _subject }</span>*/}
+        //         <span className = 'subject-text'> uBegin </span>
+        //         { _showParticipantCount && <ParticipantsCount /> }
+        //         <ConferenceTimer />
+        //     </div>
+        // );
     }
 }
 

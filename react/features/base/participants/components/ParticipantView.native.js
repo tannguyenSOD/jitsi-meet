@@ -207,11 +207,6 @@ class ParticipantView extends Component<Props> {
                 }}
                 touchFeedback = { false }>
 
-                <TestHint
-                    id = { testHintId }
-                    onPress = { onPress }
-                    value = '' />
-
                 { renderVideo
                     && <VideoTrack
                         onPress = { onPress }
