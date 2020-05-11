@@ -120,7 +120,7 @@ class WelcomePage extends AbstractWelcomePage {
         super.componentDidMount();
 
         document.body.classList.add('welcome-page');
-        document.title = interfaceConfig.APP_NAME;
+        document.title = 'uBegin Video Call';
 
         if (this.state.generateRoomnames) {
             this._updateRoomname();

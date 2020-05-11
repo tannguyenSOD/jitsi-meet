@@ -43,14 +43,21 @@ class HangupButton extends AbstractHangupButton<Props, *> {
         super(props);
 
         this._hangup = _.once(() => {
-            sendAnalytics(createToolbarEvent('hangup'));
 
-            // FIXME: these should be unified.
-            if (navigator.product === 'ReactNative') {
-                this.props.dispatch(appNavigate(undefined));
-            } else {
-                this.props.dispatch(disconnect(true));
-            }
+            // TODO: Tan customize for uBegin
+            window.location.href = 'https://ubegin.com/dashboard';
+
+
+            // sendAnalytics(createToolbarEvent('hangup'));
+            //
+            // // FIXME: these should be unified.
+            // if (navigator.product === 'ReactNative') {
+            //     this.props.dispatch(appNavigate(undefined));
+            // } else {
+            //     this.props.dispatch(disconnect(true));
+            // }
+
+
         });
     }
 
